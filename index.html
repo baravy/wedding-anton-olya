@@ -5,37 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>Открыть приглашение</title>
-    <meta name="description" content="Открыть приглашение на свадьбу" />
+    <title>приглашение на свадьбу</title>
+    <meta name="description" content="Приглашение на свадьбу" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lily+Script+One&family=Montserrat:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/felidae" type="text/css"/>
   </head>
 
   <body>
-    <main class="gate" aria-label="Открыть приглашение">
-      <a class="gate__card" href="invite.html" aria-label="Открыть приглашение">
-        <span class="gate__media" aria-hidden="true">
-          <img src="assets/img/hero.png" alt="" loading="eager" decoding="async" />
-        </span>
-        <span class="gate__body">
-          <span class="gate__kicker">Нажмите, чтобы открыть</span>
-          <span class="gate__title">Приглашение на свадьбу</span>
-          <span class="gate__hint">TSAR PALACE LUXURY HOTEL &amp; SPA</span>
-        </span>
-      </a>
+  <main id="top">
+    <section id="intro" class="section section--tight">
+      <div class="container">
+        <h2 class="section__title">Антон и Оля</h2>
 
-      <noscript>
-        <p style="max-width: 520px; margin: 18px auto 0; padding: 0 20px; color: rgba(35, 29, 25, 0.72); text-align: center;">
-          Если у вас отключен JavaScript, откройте приглашение по ссылке: <a href="invite.html">invite.html</a>
-        </p>
-      </noscript>
-    </main>
+        <div class="intro__container">
+          <div class="intro__photo" aria-label="Фото">
+            <span class="intro__photo__label">- Интересно, кто <br />будет моей женой?</span>
+            <img src="assets/img/anton.jpg" alt="" loading="eager" decoding="async" />
+            <span class="intro__photo__label"> </span>
+          </div>
+          <div class="intro__photo__separator"></div>
+          <div class="intro__photo" aria-label="Фото">
+            <span class="intro__photo__label"> </span>
+            <img src="assets/img/ola.jpg" alt="" loading="eager" decoding="async" />
+            <span class="intro__photo__label">- ей буду я!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendar" class="section section--tight">
+      <div class="container">
+        <h2 class="section__title">Календарь</h2>
+      </div>
+    </section>
+
+
+    <section class="header">
+      <div class="container">
+        <div>
+          <h1 class="section__title">Дорогие <br/><em>родные и близкие!</em></h1>
+          <span class="section__text">
+               В нашей жизни предстоят перемены!
+            </span>
+          <span class="section__text">
+               Мы хотим, чтобы в этот день рядом с нами <br/>  были самые близкие и дорогие для
+              нас люди.
+            </span>
+          <span class="section__text">
+              Приглашаем вас на нашу свадьбу!
+            </span>
+        </div>
+      </div>
+    </section>
+    <div class="separator"></div>
+
+    <section id="place" class="section section--tight">
+      <div class="container">
+        <span class="section__title">Место Проведения</span>
+        <span class="section__text">
+          Ждем вас по адресу:
+        </span>
+        <span class="section__text">
+          Усадьба EDEN
+        </span>
+        <span class="section__text">
+          Минский район, а/г Сеница,
+        </span>
+        <span class="section__text">
+           Набережная ул., 1
+        </span>
+        <div class="actions">
+          <a class="btn btn--ghost" href="https://yandex.by/maps/-/CPEmrA1j" target="_blank" rel="noopener">ПЕРЕЙТИ НА КАРТУ</a>
+          <a class="btn btn--ghost" href="https://3.redirect.appmetrica.yandex.com/route?end=Eden" target="_blank" rel="noopener">Вызвать такси</a>
+        </div>
+
+        <div class="hero__photo" aria-label="Фото">
+          <img src="assets/img/place.jpg" alt="" loading="eager" decoding="async" />
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="program" class="section section--tight">
+      <div class="container">
+        <span class="section__title">Программа дня</span>
+       <div class="program__timeline">
+         <div class="program_time_container">
+           <span class="section__text program_text" >15:00</span>
+           <span class="section__text program_text">17:00</span>
+           <span class="section__text program_text">20:00</span>
+           <span class="section__text program_text">20:00</span>
+         </div>
+         <div class="program_dot_container">
+           <div class="dot program_text"></div>
+           <div class="dot program_text"></div>
+           <div class="dot program_text"></div>
+           <div class="dot program_text"></div>
+         </div>
+         <div class="program_description_container">
+           <span class="section__text program_text" >Сбор гостей</span>
+           <span class="section__text program_text">Сбор гостей</span>
+           <span class="section__text program_text">Сбор гостей</span>
+           <span class="section__text program_text">Сбор гостей</span>
+         </div>
+       </div>
+      </div>
+    </section>
+
+    <section id="dress-code" class="section section--tight">
+      <div class="container">
+        <span class="section__title">Дресс код</span>
+        <span class="section__text">
+        Будем благодарны, если в своих нарядах вы поддержите цветовую палитру нашего праздника
+        </span>
+      </div>
+    </section>
+
+
+    <section id="wishes" class="section section--tight">
+      <div class="container">
+        <span class="section__title">Пожелания</span>
+        <span class="section__text">
+          Денежные конверты будут лучшим <br>подарком, который мы используем <br>на исполнение наших желаний.
+        </span>
+        <span class="section__text">
+         Приятным комплиментом вместо цветов для <br>нас будет бутылочка хорошего вина, которую <br>мы откроем на ближайшем празднике.
+        </span>
+      </div>
+    </section>
+
+
+
+
+
+
+    <footer id="contacts" class="footer">
+      <div class="container">
+        <div class="contact">
+          <span class="section__title">Контакты</span>
+          <div class="contact__name">МАРИЯ</div>
+          <div class="social" aria-label="Соцсети">
+            <a class="iconbtn" href="tel:+79000000000">
+              <img src="assets/icons/wa.svg" alt="" aria-hidden="true" />
+              +7 900 000-00-00
+            </a>
+            <a class="iconbtn" href="#" aria-disabled="true">
+              <img src="assets/icons/telegram.svg" alt="" aria-hidden="true" />
+              Telegram (скоро)
+            </a>
+          </div>
+          <div class="fineprint">С нетерпением ждём встречи!</div>
+        </div>
+
+        <div class="card" style="margin-top: 16px;">
+          <span class="section__title" style="font-size: 22px; margin-bottom: 10px;">Ваше присутствие</span>
+          <p class="section__subtitle">
+            Мы убрали форму с сайта. Как только вы пришлете ссылку на Google Form, подключим ее к кнопке.
+          </p>
+          <div class="actions" style="margin-top: 14px;">
+            <a class="btn btn--primary" href="#" aria-disabled="true">Открыть Google Form (скоро)</a>
+            <a class="btn btn--ghost" href="#top">Наверх</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
   </body>
 </html>
