@@ -211,7 +211,7 @@ a {
   font-size: 12px;
   height: 30px;
   background: transparent;
-  vertical-align: center;
+  font-style: italic;
 }
 
 .program__timeline {
@@ -290,4 +290,18 @@ a {
     font-size: 20px;
     line-height: 26px;
   }
+}
+
+
+
+.dress__container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dress__item {
+  width: 60px;
+  height: 20px;
+  margin-right: 5px;
 }
