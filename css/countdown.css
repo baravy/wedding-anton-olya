@@ -1,0 +1,15 @@
+.countdown {
+    display: flex;
+    gap: 20px;
+    color: #5a4b3f;
+    height: 400px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item span {
+    font-size: 30px;
+    display: block;
+}

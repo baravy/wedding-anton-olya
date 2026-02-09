@@ -11,9 +11,18 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
   </head>
 
   <body>
+
+  <audio autoplay loop>
+    <source src="assets/audio.mp3" type="audio/mpeg">
+  </audio>
   <div id="preloader">
     <div class="spinner"></div>
   </div>
@@ -38,6 +47,27 @@
         </div>
       </div>
     </section>
+
+
+
+    <section class="header">
+      <div class="container">
+        <div>
+          <h1 class="section__title">Дорогие <br/><em>родные и близкие!</em></h1>
+          <span class="section__text">
+               В нашей жизни предстоят перемены!
+            </span>
+          <span class="section__text">
+               Мы хотим, чтобы в этот день рядом с нами <br/>  были самые близкие и дорогие для
+              нас люди.
+            </span>
+          <span class="section__text">
+              Приглашаем вас на нашу свадьбу!
+            </span>
+        </div>
+      </div>
+    </section>
+    <div class="separator"></div>
 
     <section id="calendar" class="section section--tight">
       <h2 class="section__title">Июнь 2026</h2>
@@ -70,25 +100,6 @@
     </section>
 
 
-    <section class="header">
-      <div class="container">
-        <div>
-          <h1 class="section__title">Дорогие <br/><em>родные и близкие!</em></h1>
-          <span class="section__text">
-               В нашей жизни предстоят перемены!
-            </span>
-          <span class="section__text">
-               Мы хотим, чтобы в этот день рядом с нами <br/>  были самые близкие и дорогие для
-              нас люди.
-            </span>
-          <span class="section__text">
-              Приглашаем вас на нашу свадьбу!
-            </span>
-        </div>
-      </div>
-    </section>
-    <div class="separator"></div>
-
     <section id="place" class="section section--tight">
       <div class="container">
         <span class="section__title"><em>Место Проведения</em></span>
@@ -120,48 +131,51 @@
     <section id="program" class="section section--tight">
       <div class="container">
         <span class="section__title"><em>Программа дня</em></span>
-       <div class="program__timeline">
-         <div class="program_time_container">
-           <span class="section__text program_text" >15:00</span>
-           <span class="section__text program_text">15:30</span>
-           <span class="section__text program_text">17:00</span>
-           <span class="section__text program_text">20:00</span>
-           <span class="section__text program_text">23:00</span>
-         </div>
-         <div class="program_description_container">
-           <div class="program_description__item">
-             <div class="dot program_text"></div>
-             <span class="section__text program_text" >Сбор гостей</span>
-           </div>
-           <div class="program_description__item">
-             <div class="dot program_text"></div>
-             <span class="section__text program_text" >Выездная церемония</span>
-           </div>
-           <div class="program_description__item">
-             <div class="dot program_text"></div>
-             <span class="section__text program_text" >Свадебный банкет</span>
-           </div>
-           <div class="program_description__item">
-             <div class="dot program_text"></div>
-             <span class="section__text program_text" >Супер игра <br />(участие 20BYN)</span>
-           </div>
-           <div class="program_description__item">
-             <div class="dot program_text"></div>
-             <span class="section__text program_text" >Заверешние</span>
-           </div>
-         </div>
-       </div>
+        <div class="program__line">
+          <div class="program__image__container">
+            <img class="program__image" src="assets/icons/place.svg" alt="" aria-hidden="true" />
+            <div class="program__separator"></div>
+          </div>
+
+          <div class="program__details">
+            <span class="section__text program_text" >15:00</span>
+            <span class="section__text program_text program_text__description" >СБОР ГОСТЕЙ И ФУРШЕТ</span>
+          </div>
+        </div>
+        <div class="program__line">
+          <div class="program__image__container">
+            <img class="program__image" src="assets/icons/ceremony.svg" alt="" aria-hidden="true" />
+            <div class="program__separator"></div>
+          </div>
+
+          <div class="program__details">
+            <span class="section__text program_text" >16:30</span>
+            <span class="section__text program_text program_text__description" >ЦЕРЕМОНИЯ</span>
+          </div>
+        </div>
+        <div class="program__line">
+          <div class="program__image__container">
+            <img class="program__image" src="assets/icons/banket.svg" alt="" aria-hidden="true" />
+            <div class="program__separator"></div>
+          </div>
+
+          <div class="program__details">
+            <span class="section__text program_text" >17:00</span>
+            <span class="section__text program_text program_text__description" >Банкет</span>
+          </div>
+        </div>
+        <div class="program__line">
+          <div class="program__image__container">
+            <img class="program__image" src="assets/icons/finish.svg" alt="" aria-hidden="true" />
+          </div>
+
+          <div class="program__details">
+            <span class="section__text program_text" >23:00</span>
+            <span class="section__text program_text program_text__description" >ЗАВЕРШЕНИЕ ВЕЧЕРА</span>
+          </div>
+        </div>
       </div>
     </section>
-
-<!--    <section id="dress-code" class="section section&#45;&#45;tight">-->
-<!--      <div class="container">-->
-<!--        <span class="section__title">Дресс код</span>-->
-<!--        <span class="section__text">-->
-<!--        Будем благодарны, если в своих нарядах вы поддержите цветовую палитру нашего праздника-->
-<!--        </span>-->
-<!--      </div>-->
-<!--    </section>-->
 
 
     <section id="wishes" class="section section--tight">
@@ -178,8 +192,8 @@
 
 
         <div class="wish_container">
-          <img class="wish__image" src="assets/icons/child.png" alt="" aria-hidden="true" />
-          <span class="section__text">Мы очень хотим, чтобы этот вечер стал временем отдыха и лёгкости для всех гостей, поэтому формат нашего торжества не предполагает детской зоны и аниматоров. Будем признательны, если на этот вечер вы оставите малышей в надёжных руках</span>
+          <img class="wish__image" src="assets/icons/child3.svg" width="200" alt="" aria-hidden="true" />
+          <span class="section__text">Мы очень хотим, чтобы этот вечер стал временем отдыха и лёгкости для всех гостей, поэтому формат нашего торжества не предполагает детской зоны и аниматоров. Будем признательны, если на этот вечер вы оставите малышей в надёжных руках.</span>
         </div>
       </div>
     </section>
@@ -188,9 +202,8 @@
     <section id="attendance" class="section section--tight">
       <div class="container">
         <span class="section__title"><em>Ваше присутствие</em></span>
-        <span class="section__text">Просим подтвердите ваше присутствие до 5 мая.</span>
-        <p />
-        <span class="section__text">Также будем признательны, если вы сообщите о наличии пищевых аллергий и ваших предпочтениях по алкоголю.</span>
+        <img src="assets/icons/5may.png" width="130" alt="" aria-hidden="true" />
+        <span style="margin-top: 20px" class="section__text">Будем признательны, если вы подтвердите своё присутствие до 5 мая, а также сообщите о наличии пищевых аллергий и ваших предпочтениях по алкоголю.</span>
       </div>
     </section>
 
@@ -198,9 +211,11 @@
     <section id="dress" class="section section--tight">
       <div class="container">
         <span class="section__title"><em>Дресс-код</em></span>
-        <span class="section__text">Для нас главное — ваше присутствие <br />и хорошее настроение, но мы будем рады если вы отдадите предпочтение спокойным оттенкам.</span>
+        <span class="section__text">Самое важное для нас – видеть вас рядом и разделить этот день вместе! <br /> <br />
+Если вы будете выбирать образ, нам будет особенно приятно, если он поддержит атмосферу праздника – мягкие, нейтральные, спокойные оттенки.
+<br /> <br />Палитра ниже – для вдохновения.</span>
         <div class="dress__container">
-          <div class="dress__item" style="background: #F4F1EC"></div>
+          <div class="dress__item" style="background: #e37a23"></div>
           <div class="dress__item" style="background: #E6DCCF"></div>
           <div class="dress__item" style="background: #C48A5A"></div>
           <div class="dress__item" style="background: #B7C4AE"></div>
@@ -219,18 +234,42 @@
         <span class="section__text">По любым вопросам, просьба, обращайтесь к нашему организатору</span>
         <br />
 
-        <span class="section__title">Виктория</span>
-        <a class="iconbtn" href="tel:+79000000000">
-          <img src="assets/icons/wa.svg" alt="" aria-hidden="true" />
-        </a>
+        <div class="contacts__container">
+          <a class="iconbtn" href="https://www.instagram.com/victoriya_velimovich/">
+            <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+          </a>
+          <a class="iconbtn" href="tel:+375291900920">
+            <img src="assets/icons/whatsapp.svg" alt="" aria-hidden="true" />
+          </a>
+          <a class="iconbtn" href="https://t.me/+375291900920">
+            <img src="assets/icons/telegram.svg" alt="" aria-hidden="true" />
+          </a>
+        </div>
+
+
       </div>
     </section>
 
     <section id="end" class="section section--tight">
       <div class="container">
-        <span class="section__title"><em>С нетерпением <br />ждём встречи!</em></span>
-        <div class="wish_container">
-          <img class="wish__image" src="assets/icons/telegram.svg" alt="" aria-hidden="true" />
+        <span class="section__title"><em>До встречи через</em></span>
+        <div class="countdown">
+          <div class="item">
+            <span id="days">00</span>
+            <div>дней</div>
+          </div>
+          <div class="item">
+            <span id="hours">00</span>
+            <div>час</div>
+          </div>
+          <div class="item">
+            <span id="minutes">00</span>
+            <div>минут</div>
+          </div>
+          <div class="item">
+            <span id="seconds">00</span>
+            <div>секунды</div>
+          </div>
         </div>
       </div>
     </section>
@@ -244,5 +283,37 @@
         document.body.classList.add('loaded');
       }, 1800);
     });
+  </script>
+
+  <script>
+    // Укажи дату события
+    const targetDate = new Date("2026-03-01T18:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").textContent = String(days).padStart(2, "0");
+      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+      document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+    }
+
+    const timer = setInterval(updateCountdown, 1000);
+    updateCountdown();
   </script>
 </html>
