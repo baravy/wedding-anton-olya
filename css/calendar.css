@@ -21,7 +21,23 @@
     height: 20px;
     background-color: var(--accent);
     transform: rotate(-45deg);
+    animation: heartPulse 2s ease-in-out infinite;
+    transform-origin: center;
 }
+
+@keyframes heartPulse {
+    0% {
+        transform: rotate(-45deg) scale(1);
+    }
+    50% {
+        transform: rotate(-45deg) scale(1.15);
+    }
+    100% {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+
 .heart::before,
 .heart::after {
     content: "";
