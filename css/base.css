@@ -249,12 +249,20 @@ a {
 
 .intro__photo {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-content: center;
   overflow: hidden;
   background: transparent;
   align-items: center;
 }
+
+.intro__skrepa {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  right: 0px;
+ }
 .intro__photo__separator {
   width: 60px !important;
 }
