@@ -264,9 +264,15 @@ a {
   display: flex;
   align-items: center;
   font-size: 14px;
-  height: 30px;
+  line-height: 12px;
+  height: 35px;
   background: transparent;
-  font-style: italic;
+  text-align: center;
+}
+
+.intro__photo__label__last {
+  position: relative;
+  top: -5px
 }
 
 .program__timeline {
@@ -354,6 +360,10 @@ a {
   font-size: 20px;
   text-align: left;
   text-transform: uppercase;
+}
+
+.program_text__time {
+  color: var(--accent-color)
 }
 
 .program_text__description {

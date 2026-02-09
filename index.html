@@ -34,7 +34,7 @@
 
         <div class="intro__container">
           <div class="intro__photo" aria-label="Фото">
-            <span class="intro__photo__label">- Интересно, кто <br />будет моей женой?</span>
+            <span class="intro__photo__label">- Интересно, кто будет <br /> моей женой?</span>
             <img src="assets/img/anton.jpg" alt="" loading="eager" decoding="async" />
             <span class="intro__photo__label"> </span>
           </div>
@@ -42,7 +42,7 @@
           <div class="intro__photo" aria-label="Фото">
             <span class="intro__photo__label"> </span>
             <img src="assets/img/ola.jpg" alt="" loading="eager" decoding="async" />
-            <span class="intro__photo__label">- ей буду я!</span>
+            <span class="intro__photo__label intro__photo__label__last">- ей буду я!</span>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="calendar__cell"><span class="calendar__text">6</span></div>
           <div class="calendar__cell">
             <div class="heart">
-              <span class="heart__number calendar__text">7</span>
+              <span class="heart__number calendar__text"><b>7</b></span>
             </div>
           </div>
 
@@ -138,7 +138,7 @@
           </div>
 
           <div class="program__details">
-            <span class="section__text program_text" >15:00</span>
+            <span class="section__text program_text program_text__time" >15:00</span>
             <span class="section__text program_text program_text__description" >СБОР ГОСТЕЙ И ФУРШЕТ</span>
           </div>
         </div>
@@ -149,7 +149,7 @@
           </div>
 
           <div class="program__details">
-            <span class="section__text program_text" >16:30</span>
+            <span class="section__text program_text program_text__time">16:30</span>
             <span class="section__text program_text program_text__description" >ЦЕРЕМОНИЯ</span>
           </div>
         </div>
@@ -160,7 +160,7 @@
           </div>
 
           <div class="program__details">
-            <span class="section__text program_text" >17:00</span>
+            <span class="section__text program_text program_text__time" >17:00</span>
             <span class="section__text program_text program_text__description" >Банкет</span>
           </div>
         </div>
@@ -170,7 +170,7 @@
           </div>
 
           <div class="program__details">
-            <span class="section__text program_text" >23:00</span>
+            <span class="section__text program_text program_text__time" >23:00</span>
             <span class="section__text program_text program_text__description" >ЗАВЕРШЕНИЕ ВЕЧЕРА</span>
           </div>
         </div>
@@ -287,7 +287,7 @@
 
   <script>
     // Укажи дату события
-    const targetDate = new Date("2026-03-01T18:00:00").getTime();
+    const targetDate = new Date("2026-06-07T18:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();

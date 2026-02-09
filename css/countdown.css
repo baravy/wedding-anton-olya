@@ -2,7 +2,7 @@
     display: flex;
     gap: 20px;
     color: #5a4b3f;
-    height: 400px;
+    height: 200px;
 }
 
 .item {
@@ -12,4 +12,5 @@
 .item span {
     font-size: 30px;
     display: block;
+    font-weight: 500;
 }
