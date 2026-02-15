@@ -20,11 +20,22 @@
 
   <body>
 
-  <audio autoplay loop>
+  <audio id="bgMusic" loop>
     <source src="assets/audio.mp3" type="audio/mpeg">
   </audio>
-  <div id="preloader">
-    <div class="spinner"></div>
+
+  <div id="preloader" class="preloader">
+    <div class="preloader__content">
+      <div class="heart-loader" id="heartLoader">
+        <img src="assets/icons/heartLoader.png" alt="heart" class="heart-loader__img"/>
+        <button id="openBtn" class="heart-loader__btn">Открыть приглашение</button>
+      </div>
+
+      <div class="typing-text">
+        <span id="typingText"></span>
+        <span class="cursor">|</span>
+      </div>
+    </div>
   </div>
 
   <main id="top">
@@ -280,13 +291,38 @@
   </body>
 
   <script>
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.getElementById('preloader').classList.add('hidden');
-        document.body.classList.add('loaded');
-      }, 1800);
+    const text = "У нас свадьба";
+    const typingEl = document.getElementById("typingText");
+    const openBtn = document.getElementById("openBtn");
+    const preloader = document.getElementById("preloader");
+    const music = document.getElementById("bgMusic");
+
+    let index = 0;
+
+    const cursor = document.querySelector(".cursor");
+
+    function typeText() {
+      if (index < text.length) {
+        typingEl.textContent += text[index];
+        index++;
+        setTimeout(typeText, 120);
+      } else {
+        cursor.style.color = "transparent";
+        openBtn.classList.add("visible");
+      }
+    }
+
+    openBtn.addEventListener("click", () => {
+      music.play().catch(() => {});
+      preloader.classList.add("hidden");
+      document.body.classList.add("loaded");
+    });
+
+    window.addEventListener("load", () => {
+      setTimeout(typeText, 500);
     });
   </script>
+
 
   <script>
     // Укажи дату события
