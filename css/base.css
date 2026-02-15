@@ -8,6 +8,11 @@ button:focus {
   outline: none;
 }
 
+button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 0 transparent; /* Add a custom visible ring/shadow */
+}
+
 button:focus,
 a:focus {
   outline: none;
