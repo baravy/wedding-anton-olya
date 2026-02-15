@@ -294,6 +294,10 @@
   </body>
 
   <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
     const text = "У нас свадьба";
     const typingEl = document.getElementById("typingText");
     const openBtn = document.getElementById("openBtn");
