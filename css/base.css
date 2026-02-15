@@ -10,6 +10,14 @@ main {
   transition: opacity 1.2s ease;
 }
 
+body {
+  overflow-y: hidden;
+}
+
+body.loaded {
+  overflow-y: visible;
+}
+
 body.loaded main {
   opacity: 1;
 }
@@ -17,6 +25,7 @@ body.loaded main {
 #preloader {
   position: fixed;
   inset: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,11 +54,11 @@ body.loaded main {
 /* ===== FADE IN PAGE ===== */
 main {
   opacity: 0;
-  transition: opacity 1.2s ease;
 }
 
 body.loaded main {
   opacity: 1;
+  transition: opacity 10s ease;
 }
 
 
@@ -197,6 +206,11 @@ a {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.section__title__main {
+  font-size: 34px;
+  line-height: 36px;
 }
 
 .section__title em {
@@ -475,17 +489,24 @@ a {
 
 .preloader__content {
   text-align: center;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .heart-loader {
   position: relative;
-  width: 140px;
   margin: 0 auto 20px;
 }
 
 .heart-loader img {
-  width: 400px;
+  width: 200px;
   display: block;
+  max-width: none;
+  top: 19px;
+  position: relative;
 }
 
 .heart-loader__btn {
@@ -499,7 +520,7 @@ a {
   line-height: 13px;
   cursor: pointer;
   opacity: 0;
-  transition: opacity 1.5s ease;
+  transition: opacity 3s ease;
   color: #f5f2ee;
   letter-spacing: 0.5px;
   line-height: 1.2;
@@ -507,7 +528,13 @@ a {
 }
 
 .heart-loader__btn.visible {
-  opacity: 1;
+  opacity: 0.8;
+  animation: pulseLoop 1.5s ease-in-out 2.5s infinite alternate;
+}
+
+@keyframes pulseLoop {
+  0% { opacity: 0.8; }
+  100% { opacity: 0.5; }
 }
 
 .typing-text {

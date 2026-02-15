@@ -39,9 +39,9 @@
   </div>
 
   <main id="top">
-    <section id="intro" class="section section--tight">
+    <section id="intro" class="section">
       <div class="container">
-        <h2 class="section__title"><em>Антон и Оля</em></h2>
+        <h2 class="section__title section__title__main"><em>Антон и Оля</em></h2>
 
         <div class="intro__container">
           <div class="intro__photo" aria-label="Фото">
@@ -103,7 +103,7 @@
           <div class="calendar__cell"><span class="calendar__text">6</span></div>
           <div class="calendar__cell">
             <div class="heart">
-              <img class="heart" src="assets/icons/heart.svg" alt="" aria-hidden="true">
+              <img class="heart__image" src="assets/icons/heartLoader.png" alt="" aria-hidden="true">
                  <span class="heart__number calendar__text"><b>7</b></span>
               </img>
             </div>
@@ -321,6 +321,13 @@
     window.addEventListener("load", () => {
       setTimeout(typeText, 500);
     });
+  </script>
+
+  <script>
+    window.onload = function() { // Ensure the DOM is ready
+      var audio = document.getElementById("bgMusic");
+      audio.volume = 0.05; // Set volume to 50% (0.5)
+    };
   </script>
 
 

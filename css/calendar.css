@@ -19,9 +19,10 @@
 }
 
 .heart {
-    width: 30px;
-    height: 30px;
-    animation: heartPulse 2s ease-in-out infinite;
+    width: 45px;
+    height: 45px;
+    animation: heartPulse 3s ease-in-out infinite;
+    position: absolute;
 }
 
 @keyframes heartPulse {
