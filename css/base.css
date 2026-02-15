@@ -4,6 +4,15 @@
   --accent-color: #6f7a53;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
 /* ===== FADE IN PAGE ===== */
 main {
   opacity: 0;
@@ -58,7 +67,7 @@ main {
 
 body.loaded main {
   opacity: 1;
-  transition: opacity 10s ease;
+  transition: opacity 5s ease;
 }
 
 
@@ -534,7 +543,7 @@ a {
 
 @keyframes pulseLoop {
   0% { opacity: 0.8; }
-  100% { opacity: 0.5; }
+  100% { opacity: 0.3; }
 }
 
 .typing-text {
