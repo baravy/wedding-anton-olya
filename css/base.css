@@ -259,9 +259,11 @@ a {
 
 .intro__skrepa {
   position: absolute;
-  width: 50px;
-  height: 100px;
+  width: 25px;
+  height: 46px;
   right: 0px;
+  top: 19px;
+  transform: rotate(180deg);
  }
 .intro__photo__separator {
   width: 60px !important;
