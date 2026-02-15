@@ -426,6 +426,10 @@ a {
   margin-bottom: 25px;
 }
 
+.wish_container__last {
+  margin-bottom: 0;
+}
+
 .wish__image {
   margin-bottom: 30px;
 }
