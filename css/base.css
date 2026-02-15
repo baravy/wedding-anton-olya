@@ -30,10 +30,12 @@ main {
 
 body {
   overflow-y: hidden;
+  height: 100vh
 }
 
 body.loaded {
   overflow-y: visible;
+  height: auto;
 }
 
 body.loaded main {
